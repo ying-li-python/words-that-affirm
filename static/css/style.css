@@ -1,0 +1,73 @@
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    font-size: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+#space {
+    font-size: 14px;
+}
+
+#mobile {
+    display: none;
+}
+
+#quote {
+    font-weight: 300;
+}
+
+pre {
+    text-align: left;
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.footer {
+    font-weight: 100;
+    font-size: 14px;
+    padding: 2em;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+a:hover {
+    color: rgb(129, 129, 129);
+    transition: transform 0.5s;
+}
+@media only screen and (max-width: 720px) {
+    #space {
+        display: none;
+    }
+    #mobile {
+        display: inline-flex;
+        font-size: 14px;
+    }
+    #quote {
+        font-size: 28px;
+    }
+    html {
+        height: 80%;
+    }
+}
