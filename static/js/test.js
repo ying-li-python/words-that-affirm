@@ -1,7 +1,7 @@
 var quotation = new Array();
 
-quotation[0] = "I have my own way to achieve my goals.";
-quotation[1] = "I deserve to be happy.";
+quotation[0] = "I am unapologetic for who I am.";
+quotation[1] = "I deserve to be happy and confident.";
 quotation[2] = "Though times are tough, I am resilient.";
 quotation[3] = "I am empowered by my awesomeness.";
 quotation[4] = "I am proud to be where I am today.";
@@ -13,10 +13,15 @@ quotation[9] = "You are a kind, honest, loving soul. I believe in you.";
 quotation[10] = "My path is not set in stone; I am the architect.";
 quotation[11] = "My life is meaningful.";
 quotation[12] = "No matter the obstacle, I am brave.";
-quotation[13] = "Take a deep breath. I am connected to the land, water, sky.";
+quotation[13] = "Take a deep breath. You are going to figure this out.";
 quotation[14] = "I am growing, like a fabulous sunflower.";
 quotation[15] = "I am optimistic about what the universe will bring.";
-quotation[16] = "You are worthy."
+quotation[16] = "You are loved."
+quotation[17] = "I control what I feel is a fun, comfortable activity for me."
+quotation[18] = "I am allowed to cry and feel sad. I will make it through."
+quotation[19] = "You are a survivor. I applaud you for your courage."
+quotation[20] = "I have my own way to achieve my goals."
+quotation[21] = "I allow myself time and space to heal."
 
 var backgroundColor = new Array();
 
