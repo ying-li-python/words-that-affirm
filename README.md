@@ -1,6 +1,6 @@
 # Words that affirm 
 
-<img src="https://github.com/ying-li-python/words-that-affirm/blob/master/static/demo.gif?raw=true">
+<img src="https://github.com/ying-li-python/words-that-affirm/blob/master/static/demo2.gif?raw=true">
 
 [Visit the webpage](https://yingli.dev/words-that-affirm/)
 
