@@ -39,7 +39,14 @@ backgroundColor[4] = "rgb(158, 227, 125)";
 backgroundColor[5] = "rgb(170, 239, 223)";
 backgroundColor[6] = "rgb(234, 217, 76)";
 backgroundColor[7] = "rgb(235, 130, 88)";
-backgroundColor[8]= "rgb(236, 157, 237)";
+backgroundColor[8] = "rgb(236, 157, 237)";
+backgroundColor[9] = "rgb(119, 163, 234)";
+backgroundColor[10] = "rgb(138, 249, 134)";
+backgroundColor[11] = "rgb(143,149,211)";
+backgroundColor[12] = "rgb(209,245,255)";
+backgroundColor[13] = "rgb(255,202,212)";
+backgroundColor[14] = "rgb(207,255,229)";
+backgroundColor[15] = "rgb(153,139,244)";
 
 // Default HTML
 document.getElementById("quote").innerHTML = `You are worthy.`
