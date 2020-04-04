@@ -1,5 +1,6 @@
 var quotation = new Array();
 
+// quotes
 quotation[0] = "I am unapologetic for who I am.";
 quotation[1] = "I deserve to be happy and confident.";
 quotation[2] = "Though times are tough, I am resilient.";
@@ -31,6 +32,7 @@ quotation[27] = "I believe in myself and my potential."
 
 var backgroundColor = new Array();
 
+// background colors
 backgroundColor[0] = "rgb(86, 203, 249)";
 backgroundColor[1] = "rgb(209, 179, 196)";
 backgroundColor[2] = "rgb(0, 191, 178)";
