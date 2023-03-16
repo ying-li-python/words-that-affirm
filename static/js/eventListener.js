@@ -1,4 +1,34 @@
-var quotation = new Array();
+let Qoutes = [
+  "I am unapologetic for who I am.",
+  "I deserve to be happy and confident.",
+  "Though times are tough, I am resilient.",
+  "I am empowered by my awesomeness.",
+  "One day at a time.",
+  "Treat yourself. You totally deserve it.",
+  "I am enough.",
+  "Good vibes are coming your way.",
+  "You have accomplished a lot. Keep it up!",
+  "You are a kind, honest, loving soul. I believe in you.",
+  "My life is meaningful.",
+  "No matter the obstacle, I am brave.",
+  "Take a deep breath. You are going to figure this out.",
+  "I am growing, like a fabulous sunflower.",
+  "I am optimistic about what the universe will bring.",
+  "You are loved.",
+  "I control what I feel is a fun, comfortable activity for me.",
+  "I am allowed to cry and feel sad. I will make it through.",
+  "You are a survivor. I applaud you for your courage.",
+  "I have my own way to achieve my goals.",
+  "I allow myself time and space to heal.",
+  "I will get through this.",
+  "I am proud of myself.",
+  "I choose to be happy and to love myself today.",
+  "My possibilites are endless.",
+  "I am strong and intelligent. My obstacles stand no chance.",
+  "I believe in myself and my potential.",
+];
+
+var quotation = Qoutes;
 
 // quotes
 quotation[0] = "I am unapologetic for who I am.";
@@ -17,18 +47,18 @@ quotation[12] = "No matter the obstacle, I am brave.";
 quotation[13] = "Take a deep breath. You are going to figure this out.";
 quotation[14] = "I am growing, like a fabulous sunflower.";
 quotation[15] = "I am optimistic about what the universe will bring.";
-quotation[16] = "You are loved."
-quotation[17] = "I control what I feel is a fun, comfortable activity for me."
-quotation[18] = "I am allowed to cry and feel sad. I will make it through."
-quotation[19] = "You are a survivor. I applaud you for your courage."
-quotation[20] = "I have my own way to achieve my goals."
-quotation[21] = "I allow myself time and space to heal."
-quotation[22] = "I will get through this."
-quotation[23] = "I am proud of myself."
-quotation[24] = "I choose to be happy and to love myself today."
-quotation[25] = "My possibilites are endless."
-quotation[26] = "I am strong and intelligent. My obstacles stand no chance."
-quotation[27] = "I believe in myself and my potential."
+quotation[16] = "You are loved.";
+quotation[17] = "I control what I feel is a fun, comfortable activity for me.";
+quotation[18] = "I am allowed to cry and feel sad. I will make it through.";
+quotation[19] = "You are a survivor. I applaud you for your courage.";
+quotation[20] = "I have my own way to achieve my goals.";
+quotation[21] = "I allow myself time and space to heal.";
+quotation[22] = "I will get through this.";
+quotation[23] = "I am proud of myself.";
+quotation[24] = "I choose to be happy and to love myself today.";
+quotation[25] = "My possibilites are endless.";
+quotation[26] = "I am strong and intelligent. My obstacles stand no chance.";
+quotation[27] = "I believe in myself and my potential.";
 
 var backgroundColor = new Array();
 
@@ -51,114 +81,106 @@ backgroundColor[14] = "rgb(207,255,229)";
 backgroundColor[15] = "rgb(153,139,244)";
 
 // Default HTML
-document.getElementById("quote").innerHTML = `You are worthy.`
+document.getElementById("quote").innerHTML = `You are worthy.`;
 document.body.style.backgroundColor = "rgb(167, 190, 211)";
 
-// for desktop users, when a user press the space bar 
-document.addEventListener('keyup', event => {
+// for desktop users, when a user press the space bar
+document.addEventListener("keyup", (event) => {
+  if (event.code == "Space") {
+    // Store current quote in an array
+    var newArray = [];
+    var currentQuote = document.getElementById("quote").innerHTML;
+    newArray.push(currentQuote);
 
-    if (event.code == "Space") {
+    // Randomize the upcoming quote and store in new array
+    var random = Math.floor(Math.random() * quotation.length);
+    var newArray2 = [];
+    newArray2.push(quotation[random]);
 
-        // Store current quote in an array
-        var newArray = [];
-        var currentQuote = document.getElementById("quote").innerHTML;
-        newArray.push(currentQuote);
+    // Conditional
 
-        // Randomize the upcoming quote and store in new array
-        var random = Math.floor(Math.random()*(quotation.length));
-        var newArray2 = [];
-        newArray2.push(quotation[random])
-
-        // Conditional 
-
-        // if the current quote is the same as the upcoming quote, redo random
-        if (JSON.stringify(newArray)==JSON.stringify(newArray2)) {
-            var nextRandom = Math.floor(Math.random()*(quotation.length));
-            document.getElementById("quote").innerHTML = quotation[nextRandom];
-
-        }
-    
-        // if not, stick with randomized upcoming quote
-        else {
-            document.getElementById("quote").innerHTML = quotation[random];
-        }
-    
-        // Store current background color in an array 
-        var currentBackgroundBody = document.body.style.backgroundColor;
-        var newbgArray = [];
-        newbgArray.push(currentBackgroundBody);
-
-        // Randomize the upcoming background color and store in new array
-        var randomBackground = Math.floor(Math.random()*(backgroundColor.length));
-        var newbgArray2 = [];
-        newbgArray2.push(backgroundColor[randomBackground]);
-
-    
-        // Conditional 
-
-        // if current background color is the same as the next bg color, redo random
-        if (JSON.stringify(newbgArray)==JSON.stringify(newbgArray2)) {
-            var nextRandomBackground = Math.floor(Math.random()*(quotation.length));
-            document.body.style.backgroundColor = backgroundColor[nextRandomBackground];
-        }
-    
-        // if not, stick with randomized upcoming bg color
-        else {
-            document.body.style.backgroundColor = backgroundColor[randomBackground];
-        }
-
+    // if the current quote is the same as the upcoming quote, redo random
+    if (JSON.stringify(newArray) == JSON.stringify(newArray2)) {
+      var nextRandom = Math.floor(Math.random() * quotation.length);
+      document.getElementById("quote").innerHTML = quotation[nextRandom];
     }
 
-  })
+    // if not, stick with randomized upcoming quote
+    else {
+      document.getElementById("quote").innerHTML = quotation[random];
+    }
+
+    // Store current background color in an array
+    var currentBackgroundBody = document.body.style.backgroundColor;
+    var newbgArray = [];
+    newbgArray.push(currentBackgroundBody);
+
+    // Randomize the upcoming background color and store in new array
+    var randomBackground = Math.floor(Math.random() * backgroundColor.length);
+    var newbgArray2 = [];
+    newbgArray2.push(backgroundColor[randomBackground]);
+
+    // Conditional
+
+    // if current background color is the same as the next bg color, redo random
+    if (JSON.stringify(newbgArray) == JSON.stringify(newbgArray2)) {
+      var nextRandomBackground = Math.floor(Math.random() * quotation.length);
+      document.body.style.backgroundColor =
+        backgroundColor[nextRandomBackground];
+    }
+
+    // if not, stick with randomized upcoming bg color
+    else {
+      document.body.style.backgroundColor = backgroundColor[randomBackground];
+    }
+  }
+});
 
 // for mobile devices, when a user taps the screen
-document.addEventListener('touchend', event => {
-   // Store current quote in an array
-   var newArray = [];
-   var currentQuote = document.getElementById("quote").innerHTML;
-   newArray.push(currentQuote);
+document.addEventListener("touchend", (event) => {
+  // Store current quote in an array
+  var newArray = [];
+  var currentQuote = document.getElementById("quote").innerHTML;
+  newArray.push(currentQuote);
 
-   // Randomize the upcoming quote and store in new array
-   var random = Math.floor(Math.random()*(quotation.length));
-   var newArray2 = [];
-   newArray2.push(quotation[random]);
+  // Randomize the upcoming quote and store in new array
+  var random = Math.floor(Math.random() * quotation.length);
+  var newArray2 = [];
+  newArray2.push(quotation[random]);
 
-   // Conditional 
+  // Conditional
 
-   // if the current quote is the same as the upcoming quote, redo random
-   if (JSON.stringify(newArray)==JSON.stringify(newArray2)) {
-       var nextRandom = Math.floor(Math.random()*(quotation.length));
-       document.getElementById("quote").innerHTML = quotation[nextRandom];
+  // if the current quote is the same as the upcoming quote, redo random
+  if (JSON.stringify(newArray) == JSON.stringify(newArray2)) {
+    var nextRandom = Math.floor(Math.random() * quotation.length);
+    document.getElementById("quote").innerHTML = quotation[nextRandom];
+  }
 
-   }
+  // if not, stick with randomized upcoming quote
+  else {
+    document.getElementById("quote").innerHTML = quotation[random];
+  }
 
-   // if not, stick with randomized upcoming quote
-   else {
-       document.getElementById("quote").innerHTML = quotation[random];
-   }
+  // Store current background color in an array
+  var currentBackgroundBody = document.body.style.backgroundColor;
+  var newbgArray = [];
+  newbgArray.push(currentBackgroundBody);
 
-   // Store current background color in an array 
-   var currentBackgroundBody = document.body.style.backgroundColor;
-   var newbgArray = [];
-   newbgArray.push(currentBackgroundBody);
+  // Randomize the upcoming background color and store in new array
+  var randomBackground = Math.floor(Math.random() * backgroundColor.length);
+  var newbgArray2 = [];
+  newbgArray2.push(backgroundColor[randomBackground]);
 
-   // Randomize the upcoming background color and store in new array
-   var randomBackground = Math.floor(Math.random()*(backgroundColor.length));
-   var newbgArray2 = [];
-   newbgArray2.push(backgroundColor[randomBackground]);
+  // Conditional
 
-   // Conditional 
+  // if current background color is the same as the next bg color, redo random
+  if (JSON.stringify(newbgArray) == JSON.stringify(newbgArray2)) {
+    var nextRandomBackground = Math.floor(Math.random() * quotation.length);
+    document.body.style.backgroundColor = backgroundColor[nextRandomBackground];
+  }
 
-   // if current background color is the same as the next bg color, redo random
-   if (JSON.stringify(newbgArray)==JSON.stringify(newbgArray2)) {
-       var nextRandomBackground = Math.floor(Math.random()*(quotation.length));
-       document.body.style.backgroundColor = backgroundColor[nextRandomBackground];
-   }
-
-   // if not, stick with randomized upcoming bg color
-   else {
-       document.body.style.backgroundColor = backgroundColor[randomBackground];
-   }
-
-})
-
+  // if not, stick with randomized upcoming bg color
+  else {
+    document.body.style.backgroundColor = backgroundColor[randomBackground];
+  }
+});
