@@ -1,4 +1,4 @@
-let Qoutes = [
+var Qoutes = [
   "I am unapologetic for who I am.",
   "I deserve to be happy and confident.",
   "Though times are tough, I am resilient.",
@@ -29,36 +29,6 @@ let Qoutes = [
 ];
 
 var quotation = Qoutes;
-
-// quotes
-quotation[0] = "I am unapologetic for who I am.";
-quotation[1] = "I deserve to be happy and confident.";
-quotation[2] = "Though times are tough, I am resilient.";
-quotation[3] = "I am empowered by my awesomeness.";
-quotation[4] = "One day at a time.";
-quotation[5] = "Treat yourself. You totally deserve it.";
-quotation[6] = "I am enough.";
-quotation[7] = "Good vibes are coming your way.";
-quotation[8] = "You have accomplished a lot. Keep it up!";
-quotation[9] = "You are a kind, honest, loving soul. I believe in you.";
-quotation[10] = "My path is not set in stone; I am the architect.";
-quotation[11] = "My life is meaningful.";
-quotation[12] = "No matter the obstacle, I am brave.";
-quotation[13] = "Take a deep breath. You are going to figure this out.";
-quotation[14] = "I am growing, like a fabulous sunflower.";
-quotation[15] = "I am optimistic about what the universe will bring.";
-quotation[16] = "You are loved.";
-quotation[17] = "I control what I feel is a fun, comfortable activity for me.";
-quotation[18] = "I am allowed to cry and feel sad. I will make it through.";
-quotation[19] = "You are a survivor. I applaud you for your courage.";
-quotation[20] = "I have my own way to achieve my goals.";
-quotation[21] = "I allow myself time and space to heal.";
-quotation[22] = "I will get through this.";
-quotation[23] = "I am proud of myself.";
-quotation[24] = "I choose to be happy and to love myself today.";
-quotation[25] = "My possibilites are endless.";
-quotation[26] = "I am strong and intelligent. My obstacles stand no chance.";
-quotation[27] = "I believe in myself and my potential.";
 
 var backgroundColor = new Array();
 
